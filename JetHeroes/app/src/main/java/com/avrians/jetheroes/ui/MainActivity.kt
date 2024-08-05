@@ -18,7 +18,6 @@ import com.avrians.jetheroes.ui.theme.JetHeroesTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContent {
             JetHeroesTheme {
                 Surface(
