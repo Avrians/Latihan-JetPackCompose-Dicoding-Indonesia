@@ -55,6 +55,9 @@ fun JetHeroesApp(
     viewModel: JetHeroesViewModel = viewModel(factory = ViewModelFactory(HeroRepository()))
 ) {
     val groupedHeroes by viewModel.groupedHeroes.collectAsState()
+//    val groupedHeroes = HeroesData.heroes
+//        .sortedBy { it.name }
+//        .groupBy { it.name[0] }
     Box(modifier = modifier){
         val scope = rememberCoroutineScope()
         val listState = rememberLazyListState()
