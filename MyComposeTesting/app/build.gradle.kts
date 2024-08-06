@@ -48,6 +48,7 @@ android {
         }
     }
 }
+val compose_ui_version = "1.6.8"
 
 dependencies {
 
@@ -66,4 +67,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    androidTestImplementation ("androidx.compose.ui:ui-test-junit4:$compose_ui_version")
+    debugImplementation ("androidx.compose.ui:ui-test-manifest:$compose_ui_version")
+
 }
